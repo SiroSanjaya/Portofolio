@@ -1,0 +1,76 @@
+{
+    "home": [{
+            "id": 1,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-3.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-4.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-5.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-6.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-7.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Gallery Title 1",
+            "image": "gallery/gallery-8.jpg"
+        }
+    ],
+    "gallery": [{
+            "id": 1,
+            "title": "Gallery Title 1",
+            "subtitle": "Subtitle for Gallery 1",
+            "secondTitle": "Second Title for Gallery 1",
+            "description": "Detailed description for Gallery 1. Includes more information about the project, its goals, and achievements.",
+            "images": [
+                "gallery-1.jpg",
+                "gallery-2.jpg",
+                "gallery-3.jpg"
+            ],
+            "category": "Category 1",
+            "client": "Client 1",
+            "projectDate": "2024-07-01",
+            "projectUrl": "https://example.com/project1"
+        },
+        {
+            "id": 2,
+            "title": "Gallery Title 2",
+            "subtitle": "Subtitle for Gallery 2",
+            "secondTitle": "Second Title for Gallery 2",
+            "description": "Detailed description for Gallery 2. Includes more information about the project, its goals, and achievements.",
+            "images": [
+                "assets/img/gallery/gallery2_image1.jpg",
+                "assets/img/gallery/gallery2_image2.jpg",
+                "assets/img/gallery/gallery2_image3.jpg"
+            ],
+            "category": "Category 2",
+            "client": "Client 2",
+            "projectDate": "2024-08-01",
+            "projectUrl": "https://example.com/project2"
+        }
+    ]
+}

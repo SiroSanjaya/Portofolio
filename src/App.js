@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import Gallery from './pages/Gallery';
+import Footer from './components/Footer';
+import React, { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+    return () => {
+      document.body.style.backgroundColor = '';
+      document.body.style.color = '';
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Gallery/:id" element={<Gallery />} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/Resume" element={<Resume/>} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
