@@ -1016,102 +1016,190 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Services Section
+# Services
 --------------------------------------------------------------*/
 
-.services .service-item {
-    padding: 50px 30px;
-    transition: all ease-in-out 0.4s;
-    background: var(--color-secondary);
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-.services .service-item:before {
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #ffffff;
+}
+
+.section-title h2::before {
     content: "";
     position: absolute;
-    background: #1d1f20;
-    top: -200px;
-    transition: all 0.3s;
-    z-index: -1;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
 }
 
-.services .service-item i {
-    background: var(--color-primary);
-    color: #fff;
-    font-size: 24px;
-    transition: 0.3s;
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #18d26e;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+.services .icon-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #0c0c0c;
+    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
+    transition: ease-in-out 0.3s;
+    position: relative;
 }
 
-.services .service-item h4 {
+.services .icon-box .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.services .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services .icon-box .icon svg path {
+    transition: 0.5s;
+    fill: #7e7878;
+}
+
+.services .icon-box h4 {
     font-weight: 600;
-    margin: 15px 0 0 0;
-    transition: 0.3s;
-    font-size: 20px;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
 }
 
-.services .service-item h4 a {
-    color: #fff;
+.services .icon-box h4 a {
+    color: #45505b;
+    transition: ease-in-out 0.3s;
 }
 
-.services .service-item p {
+.services .icon-box p {
     line-height: 24px;
     font-size: 14px;
-    margin: 15px 0 0 0;
+    margin-bottom: 0;
 }
 
-.services .service-item:hover:before {
-    background: var(--color-primary);
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
+.services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
-.services .service-item:hover h4 a,
-.services .service-item:hover p {
+.services .iconbox-blue i {
+    color: #47aeff;
+}
+
+.services .iconbox-blue:hover .icon i {
     color: #fff;
 }
 
-.services .service-item:hover i {
-    background: #fff;
-    color: var(--color-primary);
+.services .iconbox-blue:hover .icon path {
+    fill: #47aeff;
 }
 
-
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-
-.pricing {
-    margin-top: 80px;
+.services .iconbox-orange i {
+    color: #ffa76e;
 }
 
-.pricing .pricing-item {
-    border-bottom: 1px dashed #474a4d;
-    width: 100%;
-    height: 100%;
-    padding: 0 0 15px 0;
+.services .iconbox-orange:hover .icon i {
+    color: #fff;
 }
 
-.pricing .pricing-item h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+.services .iconbox-orange:hover .icon path {
+    fill: #ffa76e;
 }
 
-.pricing .pricing-item h4 {
-    margin: 0;
-    font-size: 16px;
+.services .iconbox-Node:hover .icon path {
+    fill: #50e07c;
+}
+
+.services .iconbox-pink i {
+    color: #204a81;
+}
+
+.services .iconbox-pink:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-pink:hover .icon path {
+    fill: #25518a;
+}
+
+.services .iconbox-yellow i {
+    color: #ffbb2c;
+}
+
+.services .iconbox-yellow:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-yellow:hover .icon path {
+    fill: #ffffff;
+}
+
+.services .iconbox-red i {
+    color: #ff5828;
+}
+
+.services .iconbox-red:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-red:hover .icon path {
+    fill: #ff5828;
+}
+
+.services .iconbox-teal i {
+    color: #ffbb2c;
+}
+
+.services .iconbox-teal:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-teal:hover .icon path {
+    fill: #ffbb2c;
+}
+
+.services .iconbox-css:hover .icon path {
+    fill: #2c8fff;
+}
+
+.services .iconbox-blender:hover .icon path {
+    fill: #ec8642;
 }
 
 
@@ -1345,4 +1433,67 @@ h6 {
 
 .footer .credits a {
     color: var(--color-primary);
+}
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #18d26e;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #18d26e;
+    border: 2px solid #18d26e;
 }

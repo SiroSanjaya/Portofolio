@@ -2,12 +2,12 @@
     "home": [{
             "id": 1,
             "title": "Gallery Title 1",
-            "image": "gallery/gallery-1.jpg"
+            "image": "gallery/gallery-14.png"
         },
         {
             "id": 2,
             "title": "Gallery Title 1",
-            "image": "gallery/gallery-2.jpg"
+            "image": "gallery/gallery-15.png"
         },
         {
             "id": 3,
@@ -51,10 +51,10 @@
                 "gallery-2.jpg",
                 "gallery-3.jpg"
             ],
-            "category": "Category 1",
-            "client": "Client 1",
-            "projectDate": "2024-07-01",
-            "projectUrl": "https://example.com/project1"
+            "category": "Wordpress",
+            "client": "Cotton Heart",
+            "projectDate": "2023-07-01",
+            "projectUrl": "https://nasyaanggriani.com/"
         },
         {
             "id": 2,
@@ -67,10 +67,10 @@
                 "assets/img/gallery/gallery2_image2.jpg",
                 "assets/img/gallery/gallery2_image3.jpg"
             ],
-            "category": "Category 2",
-            "client": "Client 2",
-            "projectDate": "2024-08-01",
-            "projectUrl": "https://example.com/project2"
+            "category": "Wordpress",
+            "client": "Kreatif Studio",
+            "projectDate": "2023-08-01",
+            "projectUrl": "https://ahdynafis.com/"
         }
     ]
 }

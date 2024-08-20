@@ -24,20 +24,11 @@ const Navbar = () => {
             <li className="dropdown">
               <a href="#"><span>Gallery</span><FaChevronDown /></a>
               <ul>
-                <li><a href="/gallery/nature">Nature</a></li>
-                <li><a href="/gallery/people">People</a></li>
-                <li><a href="/gallery/architecture">Architecture</a></li>
-                <li><a href="/gallery/animals">Animals</a></li>
-                <li><a href="/gallery/sports">Sports</a></li>
-                <li><a href="/gallery/travel">Travel</a></li>
-                <li className="dropdown">
-                  <a href="#"><span>Sub Menu</span><FaChevronDown /></a>
-                  <ul>
-                    <li><a href="#">Sub Menu 1</a></li>
-                    <li><a href="#">Sub Menu 2</a></li>
-                    <li><a href="#">Sub Menu 3</a></li>
-                  </ul>
-                </li>
+                <li><a href="/gallery/nature">Web Development</a></li>
+                <li><a href="/gallery/people">Wordpress</a></li>
+                <li><a href="/gallery/architecture">3D Art</a></li>
+            
+                
               </ul>
             </li>
             <li><a href="/resume">Resume</a></li>
