@@ -1,5 +1,5 @@
 import React from 'react';
-import {  FaChevronDown } from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <>
@@ -20,9 +20,7 @@ const Footer = () => {
       </footer>
       {/* End Footer */}
 
-      <a href="#" className="scroll-top d-flex align-items-center justify-content-center">
-  <FaChevronDown />
-      </a>
+     
 
       
     </>

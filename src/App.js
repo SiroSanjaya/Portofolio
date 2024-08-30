@@ -4,9 +4,10 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Resume from './pages/Resume';
 import Gallery from './pages/Gallery';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop'; 
+import Preloader from './components/Preloader';
 import React, { useEffect } from 'react';
 function App() {
   useEffect(() => {
@@ -26,9 +27,10 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Gallery/:id" element={<Gallery />} />
           <Route path="/Contact" element={<Contact/>} />
-          <Route path="/Resume" element={<Resume/>} />
         </Routes>
         <Footer />
+        <ScrollToTop />
+        <Preloader />
       </div>
     </Router>
   );
